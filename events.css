@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(202, 242, 245);
+    font-family: Arial, sans-serif;
+    color: #17233b;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background-color: white;
+}
+
+.logo p {
+    color: rgb(0, 81, 255);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    color: rgb(0, 0, 97);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.links a:hover,
+.links a.active {
+    color: rgb(0, 125, 190);
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: rgb(0, 165, 206);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #0754a0;
+    color: white;
+}
+
+.heading h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.heading p {
+    font-size: 18px;
+}
+
+/* Current Event */
+.current-event {
+    padding: 55px 8%;
+}
+
+.current-event h2,
+.previous-events h2 {
+    color: #064b91;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.event-main {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.event-image {
+    flex: 1;
+}
+
+.event-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.status {
+    display: inline-block;
+    background-color: #d6f8e4;
+    color: #087b42;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.event-info h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.event-info p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.event-info h4 {
+    margin: 15px 0;
+    color: #0754a0;
+}
+
+.event-info button {
+    background-color: rgb(0, 165, 206);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.event-info button:hover {
+    background-color: #0754a0;
+}
+
+/* Previous Events */
+.previous-events {
+    padding: 55px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.event-card {
+    width: 240px;
+    padding: 25px;
+    background-color: rgb(232, 249, 250);
+    border: 2px solid #087bb5;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.event-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.event-card h3 {
+    color: #0754a0;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.event-card span {
+    display: inline-block;
+    background-color: #d9eaff;
+    color: #064b91;
+    padding: 7px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #063e78;
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+
+    .nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .links {
+        gap: 18px;
+    }
+
+    .event-main {
+        flex-direction: column;
+    }
+
+    .event-image,
+    .event-info {
+        width: 100%;
+    }
+
+    .event-image img {
+        height: 230px;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .heading h1 {
+        font-size: 35px;
+    }
+}
