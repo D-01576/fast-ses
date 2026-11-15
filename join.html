@@ -107,15 +107,7 @@
     <script>
 
         document.getElementById("joinForm").addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            let email = document.getElementById("email").value;
-
-            document.getElementById("message").innerHTML =
-                "Thank you! Your interest has been received for: " + email;
-
-            document.getElementById("joinForm").reset();
+            alert("Thank you for your interest");
 
         });
 
