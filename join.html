@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Fast SES</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="logo">
+            <p>Fast SES</p>
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="join.html" class="active">Join Us</a>
+        </div>
+    </div>
+
+    <!-- Page Heading -->
+    <div class="heading">
+        <h1>Join Our Society</h1>
+        <p>Become a part of the Software Engineering Society!</p>
+    </div>
+
+    <!-- Contact Information -->
+    <section class="contact-section">
+
+        <h2>Get In Touch</h2>
+        <p class="intro">
+            Have questions or want to become a member?
+            Contact us through the information below.
+        </p>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email Us</h3>
+                <p>fastses@example.com</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <h3>WhatsApp</h3>
+                <p>+92 300 1234567</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">☎️</div>
+                <h3>Call Us</h3>
+                <p>+92 300 1234567</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Join Form -->
+    <section class="join-section">
+
+        <div class="form-container">
+
+            <h2>Become a Member</h2>
+
+            <p>
+                Enter your email address below and take your
+                first step towards joining Fast SES.
+            </p>
+
+            <form id="joinForm">
+
+                <label for="email">Your Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <button type="submit">Join Now</button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Fast SES</h2>
+        <p>Software Engineering Society | FAST-NUCES Islamabad</p>
+        <p>Connecting Students Through Technology</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+
+        document.getElementById("joinForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let email = document.getElementById("email").value;
+
+            document.getElementById("message").innerHTML =
+                "Thank you! Your interest has been received for: " + email;
+
+            document.getElementById("joinForm").reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
